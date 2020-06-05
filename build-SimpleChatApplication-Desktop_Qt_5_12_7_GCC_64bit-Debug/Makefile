@@ -229,6 +229,7 @@ DIST          = ../../../../Qt/5.12.7/gcc_64/mkspecs/features/spec_pre.prf \
 		../../../../Qt/5.12.7/gcc_64/mkspecs/features/qt_config.prf \
 		../../../../Qt/5.12.7/gcc_64/mkspecs/linux-g++/qmake.conf \
 		../../../../Qt/5.12.7/gcc_64/mkspecs/features/spec_post.prf \
+		../SimpleChatApplication/.qmake.stash \
 		../../../../Qt/5.12.7/gcc_64/mkspecs/features/exclusive_builds.prf \
 		../../../../Qt/5.12.7/gcc_64/mkspecs/features/toolchain.prf \
 		../../../../Qt/5.12.7/gcc_64/mkspecs/features/default_pre.prf \
@@ -433,6 +434,7 @@ Makefile: ../SimpleChatApplication/SimpleChatApplication.pro ../../../../Qt/5.12
 		../../../../Qt/5.12.7/gcc_64/mkspecs/features/qt_config.prf \
 		../../../../Qt/5.12.7/gcc_64/mkspecs/linux-g++/qmake.conf \
 		../../../../Qt/5.12.7/gcc_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		../../../../Qt/5.12.7/gcc_64/mkspecs/features/exclusive_builds.prf \
 		../../../../Qt/5.12.7/gcc_64/mkspecs/features/toolchain.prf \
 		../../../../Qt/5.12.7/gcc_64/mkspecs/features/default_pre.prf \
@@ -628,6 +630,7 @@ Makefile: ../SimpleChatApplication/SimpleChatApplication.pro ../../../../Qt/5.12
 ../../../../Qt/5.12.7/gcc_64/mkspecs/features/qt_config.prf:
 ../../../../Qt/5.12.7/gcc_64/mkspecs/linux-g++/qmake.conf:
 ../../../../Qt/5.12.7/gcc_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 ../../../../Qt/5.12.7/gcc_64/mkspecs/features/exclusive_builds.prf:
 ../../../../Qt/5.12.7/gcc_64/mkspecs/features/toolchain.prf:
 ../../../../Qt/5.12.7/gcc_64/mkspecs/features/default_pre.prf:
@@ -693,6 +696,7 @@ compiler_rcc_clean:
 	-$(DEL_FILE) qrc_qml.cpp
 qrc_qml.cpp: ../SimpleChatApplication/qml.qrc \
 		../../../../Qt/5.12.7/gcc_64/bin/rcc \
+		../SimpleChatApplication/ContactPage.qml \
 		../SimpleChatApplication/main.qml
 	/home/nicholus/Qt/5.12.7/gcc_64/bin/rcc -name qml ../SimpleChatApplication/qml.qrc -o qrc_qml.cpp
 
